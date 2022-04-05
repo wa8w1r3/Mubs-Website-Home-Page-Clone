@@ -1,0 +1,451 @@
+/* This is a Page reset */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+  
+    
+}
+body{
+    scroll-behavior: smooth;
+    background-color: #f4f4f4;
+    
+}
+body{
+    line-height: 1.5;
+    color: #333;
+    background: #fff;
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+img.main-image{
+     width: auto;
+    height: 400px; 
+   margin-left: 70px;
+   margin-top: 15px;
+   
+}
+/* This was increasing the img size on hover i just turned it off*/
+/* .contain img:hover{
+    width: 612px;
+    height: 441px;
+   
+} */
+.contain img{
+    width: 540px;
+    height: 423px;
+    transition: 1.4s all;
+
+}
+#last{
+    width: unset;
+    height: unset;
+    padding-top: 20px;
+
+    }
+
+
+.content{
+    animation-name: fade-in;
+    animation-duration: 1.5s;
+
+}
+figcaption{
+    padding-left: 72px;
+}
+.image-grid figcaption:hover{
+    transition: 0.3s all ;
+    background: #313436;
+    border: rgb(72, 83, 95);
+    font-weight: 700;
+    
+}
+
+ul{
+    list-style: none;
+    display: flex;
+}
+nav{
+    position: sticky;
+    top: 0;
+}
+.navbar a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+}
+.navbar a:hover{
+    color: rgb(129, 43, 103);
+
+    transition: 0.2s;
+
+}
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.container2{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+}
+.navbar{
+    background: rgb(11, 46, 80);
+    color: #fff;
+    height: 70px;
+ 
+}
+.navbar2{
+    height: 40px;
+    
+    
+
+}
+.navbar .logo{
+
+    font-weight: bold;
+    font-family: serif;
+    font-size: xx-large;
+
+}
+.navbar .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.navbar2 .container2{
+     justify-content: space-around;
+
+}
+
+.navbar ul{
+    display: flex;
+}
+.navbar ul li{
+    margin-left: 20px;
+}
+.navbar2 a{
+    font-size: 14px;
+    font-weight: normal;
+}
+.navbar2 a:hover{
+    color: rgb(224, 54, 187);
+    transition: 0s;
+}
+
+
+
+/* Media query */
+@media(max-width: 790px){
+    .image-container{
+    
+        /* flex-wrap: wrap;
+        flex-direction: column; */
+        flex-shrink: 3;
+        
+
+    }    
+    
+}
+
+.image-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.image-grid > figure{
+   margin: 10px;
+}
+@keyframes fade-in {
+    from{opacity: 0;}
+    to{opacity: 1;}
+    
+}
+.contain:first-child{
+    text-align: center;
+   padding-top: 15px;
+    padding-bottom: 15px;
+    word-spacing: 4px;
+   }
+.image-header h2{
+    font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white , rgb(21, 51, 82);
+}
+figcaption a{
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(53, 124, 206);
+    font-weight: 450;
+    
+}
+
+  
+.top{
+    --offset: 100px;
+     position: sticky;
+    bottom: 20px; 
+    margin-left: 6px;
+    place-self: end;
+     margin-top: calc(170vh + var(--offset)); 
+    text-decoration: none;
+    padding: 10px;
+    font-family: sans-serif;
+    color: #fff;
+    background: rgb(95, 115, 134);
+    border-radius: 30px;
+    min-height: 0.5em;
+     white-space: nowrap; 
+    letter-spacing: 1px;
+    scroll-behavior: smooth;
+
+    
+    }
+    
+
+
+
+@media screen and (prefers-reduced-motion: no-preference){
+html {
+    scroll-behavior: smooth;
+}
+}
+   /* width */
+::-webkit-scrollbar {
+    width: 10px;
+    
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 50px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+
+    
+  } 
+
+input{
+    --s: 25px; /*Adjust this to control the size */
+    height: var(--s);
+    aspect-ratio: 2.5;
+     width: auto; /*some browsers need this */
+     border-radius: var(--s);
+     padding: calc(var(--s)/10);
+     margin: calc(var(--s)/2);
+     cursor: pointer;
+     background: 
+     radial-gradient(farthest-side, #15202a 96%, #0000)
+     var(--_p,0%)/var(--s) content-box no-repeat,
+     var(--_c, #dfdddd);
+     box-sizing: content-box;
+     transform-origin: calc(3*var(--s)/5) 50%;
+     transition: transform cubic-bezier(0, 300, 1,300) .5s,background .3s .1s ease-in;
+     -webkit-appearance: none;
+     -moz-appearance: none;
+     appearance: none; 
+    
+    
+}
+input:checked{
+    --_c: #161615;
+    --_p: 100%;
+    transform-origin: calc(100% -3*var(--s)/5) 50%;
+    
+}
+
+.dark-mode{
+    background-color: rgb(10, 19, 27);
+    color: white;
+    transition: 1.0s;
+    
+
+}
+.section-two{
+    margin-top: 30px;
+}
+
+.grid figcaption a{
+    padding: unset;
+    margin: unset;
+
+    }
+
+
+
+
+.container-3{
+    display: flex;
+    /*
+     margin: 10px;*/
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    
+
+}
+.container-3:last-child{
+    
+    margin-top: 10px;
+}
+
+#last-p{
+    margin-top: 10px;
+}
+
+.container-3:last-child h3{
+ 
+    font-size: 25px;
+    
+    
+}
+
+
+.section-two .section-2-heading h3{
+    
+    justify-content: center;
+    color: red;
+    display: flex;
+    margin-bottom:10px;
+    font-size: 30px;
+   
+}
+
+#last-child-grid{
+    width: 250px;
+     margin-top: -45px;
+}
+
+.grid{
+   
+    text-align: justify;
+    margin: 10px;
+    
+
+}
+.grid figcaption {
+    text-align: left;
+    max-width: fit-content;
+    
+    
+}
+
+
+
+@media (max-width:1000px){
+    #last-p{
+        margin-top: 10px;  
+    }
+    #last-child-grid{
+        width: 250px;
+         margin-top: -30px
+    }
+
+
+
+
+
+    }
+
+.figstyle{
+    font-weight: 700;
+    color: #297ac5;
+}
+
+button{
+    background: linear-gradient(to bottom , rgb(68, 84, 88), #1a5466);
+    padding: 10px 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: #fff;
+    border: 0px;
+    border-radius: 5px;
+    
+}
+
+button:hover{
+    cursor: pointer;
+    background: #1c4266;
+}
+.footer{
+    display: flex;
+    padding-bottom: 50px;
+   
+    
+}
+
+.footer1{
+    background: rgb(11, 46, 80);
+    /* background-color: #297ac5; */
+    margin-top: 0px;
+    margin-left: 40px;
+    margin-right: 40px;
+ 
+
+}
+.socials{
+    
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-left: 20px;
+  
+}
+.footer1 p{
+   
+   
+    padding-left: 40px;
+    font-size: 20px;
+    color: white;
+    padding-top: 6px;
+    font-weight: 500;
+   
+    
+}
+footer{
+    background: rgb(11, 46, 80);
+}
+
+.About-us{
+   
+  
+    margin-left: 40px;
+    padding-top: 20px;
+    margin-bottom: 40px;
+   
+
+}
+.About-us h3{
+    font-weight: 500;
+    font-size: 22px;
+    color: white;
+    padding-bottom: 20px;
+    
+}
+.About-us a{
+    font-size: 18px;
+    text-decoration: none;
+    color: rgb(207, 204, 204);
+    font-weight: 500;
+   
+}
+.About-us a:hover{
+    color: #536475;
+    transition: 0.4s all;
+}
